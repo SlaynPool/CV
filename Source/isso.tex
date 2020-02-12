@@ -1,0 +1,114 @@
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+
+
+
+\begin{document}
+\name{Nicolas Vadkerti}
+\tagline{License professionnelle internet des objets}
+ 
+\photo{2.5cm}{Moi}
+\personalinfo{%
+
+  \email{nicolas.vadkerti@gmail.com}
+    \phone{06 95 69 19 90}
+    
+  \location{7 bis avenue de Fouzilhon, Pouzolles}
+  
+    
+    
+   \github{github.com/SlaynPool} 
+   \permis{Permis B}  
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+\AtBeginEnvironment{itemize}{\small}
+\cvsection[page1sidebar]{Experiences Professionnelles}
+
+\cvevent{}{Projet de fin d'année: Drone Open Source}{ 2019-2020 }{IUT de Béziers}
+\begin{itemize}
+\item Conception d'un drone
+\item Développement du Firmware 
+\item Utilisation de Microcontroleurs Arduino \& ESP32 
+\end{itemize}
+
+\divider
+
+\cvevent{}{Apprenti Administrateur Systeme, DUT}{ 2018-2019 }{CNRS, Route de Mende}
+\begin{itemize}
+\item Administration Systèmes Linux
+\item Administration Réseaux
+\item Supervision du Système d'Information
+\item Déploiement d'application 
+\end{itemize}
+\cvevent{}{Etudiant Volontaire Laboratoire de Recherche} { 2018- 2020 }{IUT Béziers}
+\begin{itemize}
+    \item  Administration Système du Laboratoire
+    \item Support projets de Recherche
+\end{itemize}
+
+\divider
+
+\cvevent{}{Projet de fin d'année: Supervision physique de baie réseau}{ 2017-2018 }{IUT de Béziers}
+\begin{itemize}
+\item Transformée de Fourrier en temps réel
+\item Programmation Python, avec la librairie Matplotlib 
+\item Utilisation du protocole MQTT
+\end{itemize}
+
+\divider
+
+\cvsection{Formation}
+\cvevent{}{Licence Professionnel Réseau \& Télécomunication, spécialité IoT (Internet Of Things)}{ 2019- -}{IUT de Béziers}
+\cvevent{}{DUT Réseau et Télécomunication}{2017-2019}{IUT de Béziers}
+\begin{itemize}
+\item 2eme Année réalisée en Apprentissage au sein du service Informatique (SIC) du CNRS, Route de Mende
+\end{itemize}
+\cvevent{}{ESMA Montpellier}{2016-2017}{Montpellier}
+\cvevent{}{Baccalauréat Scientifique}{2016}{Lycée Jean Moulin, Pézenas}
+
+
+
+\clearpage
+
+
+
+
+
+\end{document}
