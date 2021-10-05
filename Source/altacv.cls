@@ -94,12 +94,12 @@
   \RequirePackage[newcommands]{ragged2e}
 \fi
 
-\RequirePackage{xcolor}
+%\RequirePackadeRecherge{xcolor}
 
-\colorlet{accent}{blue!70!black}
-\colorlet{heading}{black}
-\colorlet{emphasis}{black}
-\colorlet{body}{black!80!white}
+%\colorlet{accent}{blue!70!black}
+%\colorlet{heading}{black}
+%\colorlet{emphasis}{black}
+%\colorlet{body}{black!80!white}
 \newcommand{\itemmarker}{{\small\textbullet}}
 \newcommand{\ratingmarker}{\faCircle}
 
